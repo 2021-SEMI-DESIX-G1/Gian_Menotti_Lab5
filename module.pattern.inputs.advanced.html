@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón modular - Avanzado</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+   
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Patrón modular - Avanzado</h1> 
+    <form id="student_form">
+        <div class="form-group">
+        <label for="">Nombre</label>
+        <input class="form-control" name="student_name" type="text">
+        <br>
+        <label for="">Edad</label>
+        <input class="form-control" name="student_age" type="text">
+        <br>
+        <label for="">Gustos</label>
+        <input class="form-control" name="student_hobbies" type="text">
+        <br>
+        <button type="submit" class="btn btn-primary">Agregar a la tabla</button>
+        </div>
+    </form>
+
+    <table class="table">
+        <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Gustos</th>
+            <th>Eliminar</th>          
+            <th>Actualizar</th>
+        </thead>
+        <tbody id="students_list"></tbody>
+        <label type="number" id="student_id" hidden>1</label>
+    </table>
+</div>
+    <script src="module.pattern.inputs.advanced.js"></script>
+</body>
+</html>
